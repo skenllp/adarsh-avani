@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh &amp; Avani – Wedding Invitation</title>
+  <meta name="description"
+    content="You are cordially invited to the wedding of Adarsh Vijayan Mini and Avani Lal, Sunday 7th February 2027 at Anchal Sigma Auditorium. Our story began in 2016. Our forever begins on 7 February 2027." />
+
+  <!-- Open Graph / WhatsApp & Social sharing preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://adarsh-avani.vercel.app/" />
+  <meta property="og:title" content="Adarsh &amp; Avani – Wedding Invitation" />
+  <meta property="og:description"
+    content="You are cordially invited to the wedding of Adarsh Vijayan Mini and Avani Lal, Sunday 7th February 2027 at Anchal Sigma Auditorium. Our story began in 2016. Our forever begins on 7 February 2027." />
+  <meta property="og:image" content="https://adarsh-avani.vercel.app/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Adarsh &amp; Avani – Wedding Invitation, 7th February 2027" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Adarsh &amp; Avani – Wedding Invitation" />
+  <meta name="twitter:description"
+    content="You are cordially invited to the wedding of Adarsh Vijayan Mini and Avani Lal, Sunday 7th February 2027 at Anchal Sigma Auditorium. Our story began in 2016. Our forever begins on 7 February 2027." />
+  <meta name="twitter:image" content="https://adarsh-avani.vercel.app/og.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Allura&family=Cinzel:wght@400;500;600&family=Lato:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <svg viewBox="0 0 100 100" class="preloader-ring">
+        <circle cx="50" cy="50" r="42"></circle>
+      </svg>
+      <span class="preloader-initials" id="preloaderInitials">A&nbsp;&amp;&nbsp;A</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ FLOATING PARTICLES ═══════════════════ -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+
+    <!-- The Nikah Arch — signature reveal -->
+    <div class="arch-frame" id="archFrame">
+      <svg class="arch-leaf arch-leaf--left" id="archLeft" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M220,420 L220,120 C220,55 175,10 110,0 L110,420 Z" />
+        <path class="arch-leaf__inline" d="M110,20 C165,32 200,68 200,122 L200,400" />
+      </svg>
+      <svg class="arch-leaf arch-leaf--right" id="archRight" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,420 L0,120 C0,55 45,10 110,0 L110,420 Z" />
+        <path class="arch-leaf__inline" d="M110,20 C55,32 20,68 20,122 L20,400" />
+      </svg>
+
+      <!-- jasmine garland along the top of the arch -->
+      <svg class="garland" viewBox="0 0 440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="garland__string" d="M10,10 Q220,70 430,10" />
+        <g class="garland__buds">
+          <circle cx="40" cy="24" r="5"></circle>
+          <circle cx="80" cy="35" r="6"></circle>
+          <circle cx="120" cy="43" r="5"></circle>
+          <circle cx="160" cy="48" r="6"></circle>
+          <circle cx="200" cy="51" r="5"></circle>
+          <circle cx="240" cy="51" r="5"></circle>
+          <circle cx="280" cy="48" r="6"></circle>
+          <circle cx="320" cy="43" r="5"></circle>
+          <circle cx="360" cy="35" r="6"></circle>
+          <circle cx="400" cy="24" r="5"></circle>
+        </g>
+      </svg>
+
+      <button type="button" class="arch-cta" id="archCta">
+        <span class="arch-cta__ring"></span>
+        <span class="arch-cta__label">Open the Invitation</span>
+      </button>
+
+      <!-- ring particle burst, populated by script.js when the arch opens -->
+      <div class="ring-particles" id="ringParticles" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="ganesha-container" style="margin-bottom: 12px;">
+        <svg class="ganesha-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" width="60" height="72"
+          fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+          style="filter: drop-shadow(0 2px 8px rgba(212,175,55,0.3));">
+          <path d="M50 15 L50 30 M42 22 C42 22 50 10 50 10 C50 10 58 22 58 22 M40 28 L60 28 M45 25 L55 25" />
+          <path d="M42 35 C30 35 25 50 40 60 C42 61 45 61 47 60" />
+          <path d="M58 35 C70 35 75 50 60 60 C58 61 55 61 53 60" />
+          <path
+            d="M47 42 C47 42 50 38 53 42 C53 42 55 50 51 62 C47 74 46 82 52 86 C58 90 64 88 66 82 C68 76 65 72 61 72" />
+          <path d="M47 46 Q50 52 53 46" fill="#D4AF37" stroke="none" />
+          <path d="M50 42 L50 48" />
+        </svg>
+      </div>
+      <p class="shloka"
+        style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; color: var(--gold); letter-spacing: 1px; margin-bottom: 8px;">
+        ॐ श्री गणेशाय नमः</p>
+      <div class="divider-ornament"><span></span><svg viewBox="0 0 40 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 2 L36 10 L20 18 L4 10 Z" stroke="#D4AF37" stroke-width="1" fill="none" />
+        </svg><span></span></div>
+      <h1 class="hero-names">
+        <span class="groom-name">Adarsh Vijayan Mini</span>
+        <span class="ampersand">&amp;</span>
+        <span class="bride-name">Avani Lal</span>
+      </h1>
+      <p class="hero-subtitle">Wedding Invitation</p>
+      <div class="hero-date">
+        <span class="date-num">07</span>
+        <span class="date-sep">·</span>
+        <span class="date-num">02</span>
+        <span class="date-sep">·</span>
+        <span class="date-num">2027</span>
+      </div>
+      <a href="#countdown" class="scroll-btn">
+        <span>Scroll to Explore</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ COUNTDOWN ═══════════════════ -->
+  <section class="countdown-section" id="countdown">
+    <div class="section-header">
+      <p class="section-tag">Mark Your Calendar</p>
+      <h2 class="section-title">The Big Day Approaches</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+    <div class="countdown-grid">
+      <div class="count-box">
+        <span class="count-num" id="days">00</span>
+        <span class="count-label">Days</span>
+      </div>
+      <div class="count-box">
+        <span class="count-num" id="hours">00</span>
+        <span class="count-label">Hours</span>
+      </div>
+      <div class="count-box">
+        <span class="count-num" id="minutes">00</span>
+        <span class="count-label">Minutes</span>
+      </div>
+      <div class="count-box">
+        <span class="count-num" id="seconds">00</span>
+        <span class="count-label">Seconds</span>
+      </div>
+    </div>
+    <p class="countdown-note">Sunday, 7th February 2027 · Muhurtham 12:13 PM – 12:35 PM</p>
+  </section>
+
+  <!-- ═══════════════════ INVITATION CARD ═══════════════════ -->
+  <section class="invitation-section" id="invitation">
+    <div class="inv-card">
+      <div class="inv-card-inner">
+        <p class="inv-from-label">Wedding Invitation</p>
+        <p class="inv-cordially">With the blessings of the Almighty,<br />together with our families, we cordially invite you<br />to grace the auspicious occasion of the wedding of</p>
+        <div class="divider-line small"><span></span><span class="diamond">◆</span><span></span></div>
+        <h2 class="inv-groom" style="margin-bottom: 2px;">Adarsh Vijayan Mini</h2>
+        <p class="inv-daughter"
+          style="font-family: var(--font-serif); font-size: 0.9rem; color: var(--text-mid); margin-bottom: 8px;">
+          Son of Late Mr. Vijayan S. &amp; Mrs. Mini SK</p>
+        <p class="inv-grandson"
+          style="font-family: var(--font-serif); font-size: 0.9rem; color: var(--text-mid); margin-bottom: 8px;">
+          S. Vijayan Mini Nivas, Kovoor</p>
+        <p class="inv-with">&amp;</p>
+        <h2 class="inv-bride" style="margin-top: 4px; margin-bottom: 2px;">Avani Lal</h2>
+        <p class="inv-daughter"
+          style="font-family: var(--font-serif); font-size: 0.9rem; color: var(--text-mid); margin-bottom: 8px;">
+          Daughter of Mrs. Manju Lal &amp; Mr. Lalu Mon</p>
+        <p class="inv-grandson"
+          style="font-family: var(--font-serif); font-size: 0.9rem; color: var(--text-mid); margin-bottom: 8px;">
+          Kumkumasseri Veedu, Vayala</p>
+        <div class="divider-line small"><span></span><span class="diamond">◆</span><span></span></div>
+        <p class="sharing-text" style="font-size: 0.95rem; line-height: 1.6;">We request the pleasure of your gracious presence and blessings on this joyous occasion.</p>
+        <p class="sharing-text" style="font-size: 0.95rem; line-height: 1.6; margin-top: 10px;"><strong>Wedding Ceremony</strong><br />Sunday, 7th February 2027 · Muhurtham 12:13 PM to 12:35 PM<br />Anchal Sigma Auditorium</p>
+        <p class="sharing-text" style="font-size: 0.95rem; line-height: 1.6; margin-top: 10px;"><strong>Wedding Reception</strong><br />Sunday, 7th February 2027 · 5:00 PM onwards<br />Our Residence</p>
+        <p class="presents-blessings"
+          style="font-family: var(--font-serif); font-style: italic; color: var(--gold-dark); font-size: 1rem; margin-top: 12px;">
+          With Best Wishes, The Families</p>
+      </div>
+      <div class="inv-corner inv-corner-tl"></div>
+      <div class="inv-corner inv-corner-tr"></div>
+      <div class="inv-corner inv-corner-bl"></div>
+      <div class="inv-corner inv-corner-br"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ BRIDE & GROOM ═══════════════════ -->
+  <section class="couple-section" id="couple">
+    <div class="section-header">
+      <p class="section-tag">The Couple</p>
+      <h2 class="section-title">Bride &amp; Groom</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+    <div class="couple-grid">
+      <!-- BRIDE -->
+      <div class="person-card bride-card" data-aos="fade-right">
+        <div class="person-photo-ring">
+          <div class="person-photo bride-photo">
+            <img src="bride.jpg" alt="Avani Lal – Bride" id="bride-img" />
+            <div class="photo-fallback bride-fallback">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none">
+                <ellipse cx="60" cy="55" rx="30" ry="35" fill="#1a3a6b" opacity="0.15" />
+                <circle cx="60" cy="45" r="22" fill="#1a3a6b" opacity="0.2" />
+                <path d="M20 140 Q60 100 100 140" fill="#1a3a6b" opacity="0.15" />
+                <text x="60" y="55" text-anchor="middle" font-size="40" fill="#1a3a6b" opacity="0.4">♀</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="person-info">
+          <h3 class="person-name">Avani Lal</h3>
+          <p class="person-role">The Bride</p>
+          <div class="person-divider"></div>
+          <p class="person-parents">D/o Mrs. Manju Lal &amp; Mr. Lalu Mon</p>
+          <p class="person-address">Kumkumasseri Veedu<br />Vayala</p>
+        </div>
+      </div>
+
+      <!-- AMPERSAND DIVIDER -->
+      <!-- <div class="couple-amp">
+        <span>&amp;</span> 
+      </div>  -->
+
+      <!-- GROOM -->
+      <div class="person-card groom-card" data-aos="fade-left">
+        <div class="person-photo-ring">
+          <div class="person-photo groom-photo">
+            <img src="groom.jpg" alt="Adarsh Vijayan Mini – Groom" id="groom-img" />
+            <div class="photo-fallback groom-fallback">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none">
+                <path d="M20 140 Q60 100 100 140" fill="#1a3a6b" opacity="0.15" />
+                <text x="60" y="55" text-anchor="middle" font-size="40" fill="#1a3a6b" opacity="0.4">♂</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="person-info">
+          <h3 class="person-name">Adarsh Vijayan Mini</h3>
+          <p class="person-role">The Groom</p>
+          <div class="person-divider"></div>
+          <p class="person-parents">S/o Late Mr. Vijayan S. &amp; Mrs. Mini SK</p>
+          <p class="person-address">S. Vijayan Mini Nivas<br />Kovoor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ═══════════════════ OUR LOVE STORY ═══════════════════ -->
+  <section class="story-section" id="story">
+    <div class="story-petals" aria-hidden="true">
+      <span style="left:6%;animation-delay:0s">♡</span><span style="left:22%;animation-delay:2.5s">✦</span>
+      <span style="left:41%;animation-delay:5s">♡</span><span style="left:63%;animation-delay:1.2s">✦</span>
+      <span style="left:81%;animation-delay:3.8s">♡</span><span style="left:93%;animation-delay:6.2s">✦</span>
+    </div>
+    <div class="section-header">
+      <p class="section-tag">Our Love Story</p>
+      <h2 class="section-title">A Journey of 10 Years</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+      <p class="story-intro">Ours is a love marriage. It began in the 9th grade, and a decade later it is finally becoming forever.</p>
+    </div>
+
+    <div class="story-timeline" id="storyTimeline">
+      <div class="story-line"><span class="story-line-fill" id="storyLineFill"></span></div>
+
+      <article class="story-item story-left">
+        <div class="story-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div class="story-card">
+          <p class="story-date">15 August 2016</p>
+          <h3 class="story-title">The Beginning</h3>
+          <p class="story-text">It all started when we were in the 9th grade. A beautiful friendship slowly turned into a love story.</p>
+        </div>
+      </article>
+
+      <article class="story-item story-right">
+        <div class="story-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.500-1.500-6-1.500-10 .5-4-2-7.500-2-10-.5z"/><path d="M12 6v13.500"/></svg></div>
+        <div class="story-card">
+          <p class="story-date">School Days</p>
+          <h3 class="story-title">Our First Memories</h3>
+          <p class="story-text">Through school days, changing seasons, dreams, challenges, and countless memories, we continued choosing each other.</p>
+        </div>
+      </article>
+
+      <article class="story-item story-left">
+        <div class="story-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6"/><path d="M8.500 4.500 12 8l3.500-3.500L14 3h-4z"/></svg></div>
+        <div class="story-card">
+          <p class="story-date">22 December 2024</p>
+          <h3 class="story-title">Our Engagement</h3>
+          <p class="story-text">A special promise, a beautiful new milestone, and the beginning of our journey towards forever.</p>
+        </div>
+      </article>
+
+      <article class="story-item story-right">
+        <div class="story-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.739-8z"/></svg></div>
+        <div class="story-card">
+          <p class="story-date">7 February 2027</p>
+          <h3 class="story-title">Our Forever Begins</h3>
+          <p class="story-text">After more than 10 years of love, patience, and togetherness, we are finally becoming one.</p>
+        </div>
+      </article>
+    </div>
+
+    <blockquote class="story-quote">
+      <span class="story-quote-mark">“</span>
+      <p>From two hearts that met in the 9th grade to two souls choosing forever, our story has been written with love, patience, and countless beautiful memories. Ten years later, the best chapter is finally beginning.</p>
+      <footer>Adarsh &amp; Avani</footer>
+    </blockquote>
+    <p class="story-tagline">Our story began in 2016. Our forever begins on 7 February 2027.</p>
+  </section>
+
+  <!-- ═══════════════════ EVENT DETAILS ═══════════════════ -->
+  <section class="event-section" id="event">
+    <div class="event-bg-pattern"></div>
+    <div class="section-header light">
+      <p class="section-tag">The Celebration</p>
+      <h2 class="section-title">Join Us For The Celebration</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+
+    <div class="event-cards">
+      <!-- Wedding Ceremony -->
+      <div class="event-card">
+        <div class="event-badge">Ceremony</div>
+        <h3 class="event-name">Wedding Ceremony</h3>
+        <div class="event-divider"><span></span><span class="diamond small">◆</span><span></span></div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="calendar"></i></div>
+          <div>
+            <p class="detail-label">DATE</p>
+            <p class="detail-val">Sunday, 7th February 2027</p>
+          </div>
+        </div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="clock"></i></div>
+          <div>
+            <p class="detail-label">MUHURTHAM</p>
+            <p class="detail-val">12:13 PM to 12:35 PM</p>
+          </div>
+        </div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="map-pin"></i></div>
+          <div>
+            <p class="detail-label">VENUE</p>
+            <p class="detail-val">Anchal Sigma Auditorium</p>
+          </div>
+        </div>
+        <div class="event-btns">
+          <a id="maps-btn"
+            href="https://www.google.com/maps/search/?api=1&query=Anchal%20Sigma%20Auditorium"
+            target="_blank" rel="noopener" class="btn-loc primary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Open Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- Wedding Reception -->
+      <div class="event-card">
+        <div class="event-badge">Reception</div>
+        <h3 class="event-name">Wedding Reception</h3>
+        <div class="event-divider"><span></span><span class="diamond small">◆</span><span></span></div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="calendar"></i></div>
+          <div>
+            <p class="detail-label">DATE</p>
+            <p class="detail-val">Sunday, 7th February 2027</p>
+          </div>
+        </div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="clock"></i></div>
+          <div>
+            <p class="detail-label">TIME</p>
+            <p class="detail-val">5:00 PM onwards</p>
+          </div>
+        </div>
+        <div class="event-detail">
+          <div class="event-icon"><i data-lucide="home"></i></div>
+          <div>
+            <p class="detail-label">VENUE</p>
+            <p class="detail-val">Our Residence</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GLIMPSES GALLERY ═══════════════════ -->
+  <section class="glimpses-section" id="glimpses">
+    <div class="section-header">
+      <p class="section-tag">Glimpses</p>
+      <h2 class="section-title">Pre-Wedding Glimpses</h2>
+      <div class="divider-line"><span></span><span class="diamond">◆</span><span></span></div>
+    </div>
+    <div class="glimpses-container">
+      <div class="glimpses-grid">
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery1.jpg" alt="Adarsh &amp; Avani – Glimpse 1" loading="lazy" />
+          </div>
+        </div>
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery2.jpg" alt="Adarsh &amp; Avani – Glimpse 2" loading="lazy" />
+          </div>
+        </div>
+        <div class="glimpse-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery3.jpg" alt="Adarsh &amp; Avani – Glimpse 3" loading="lazy" />
+          </div>
+        </div>
+        <!-- <div class="glimpse-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery4.jpg" alt="Adarsh &amp; Avani – Glimpse 4" loading="lazy" />
+          </div>
+        </div> -->
+        <!-- <div class="glimpse-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="glimpse-img-wrapper">
+            <img src="gallery5.jpg" alt="Adarsh &amp; Avani – Glimpse 5" loading="lazy" />
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer-floral footer-floral-l">
+      <svg width="120" height="200" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M60 190 Q40 160 50 120 Q30 140 10 130 Q35 110 55 90 Q35 95 20 75 Q45 80 60 60 Q55 35 70 10 Q75 40 65 65 Q80 45 100 50 Q80 68 65 85 Q85 82 98 100 Q75 100 65 118 Q78 130 75 160 Q62 150 60 190Z"
+          fill="#1a3a6b" opacity="0.12" />
+        <circle cx="60" cy="10" r="5" fill="#D4AF37" opacity="0.5" />
+        <circle cx="100" cy="50" r="4" fill="#D4AF37" opacity="0.4" />
+        <circle cx="10" cy="130" r="3" fill="#D4AF37" opacity="0.4" />
+      </svg>
+    </div>
+    <div class="footer-content">
+      <h2 class="footer-names">Adarsh &amp; Avani</h2>
+      <p class="footer-date">07 · February · 2027</p>
+      <p class="footer-sharing">WITH BEST WISHES</p>
+      <p class="footer-sharing">THE FAMILIES</p>
+      <div class="footer-contact">
+      </div>
+    </div>
+    <div class="footer-floral footer-floral-r">
+      <svg width="120" height="200" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg"
+        style="transform:scaleX(-1)">
+        <path
+          d="M60 190 Q40 160 50 120 Q30 140 10 130 Q35 110 55 90 Q35 95 20 75 Q45 80 60 60 Q55 35 70 10 Q75 40 65 65 Q80 45 100 50 Q80 68 65 85 Q85 82 98 100 Q75 100 65 118 Q78 130 75 160 Q62 150 60 190Z"
+          fill="#1a3a6b" opacity="0.12" />
+        <circle cx="60" cy="10" r="5" fill="#D4AF37" opacity="0.5" />
+        <circle cx="100" cy="50" r="4" fill="#D4AF37" opacity="0.4" />
+        <circle cx="10" cy="130" r="3" fill="#D4AF37" opacity="0.4" />
+      </svg>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
